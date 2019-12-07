@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+    <TextView
+        android:layout_below="@id/adView"
+        android:id="@+id/haha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ဇာတ္ကားအားလံုး"
+        android:fontFamily="@font/zgf"
+         />
+
+    <ListView
+        android:layout_below="@id/haha"
+        android:id="@+id/gvMovie"
+        android:layout_width="match_parent"
+        android:layout_height="694dp"
+        android:numColumns="auto_fit"></ListView>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_below="@id/gvMovie"
+        android:id="@+id/adHaha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
